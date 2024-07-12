@@ -9,7 +9,7 @@ def load_csv_data(file_path)
   end
   data
 end
-
+ 
 # Seed schools from CSV
 schools_data = load_csv_data(Rails.root.join('db', 'seeds', 'schools.csv'))
 School.create!(schools_data)
