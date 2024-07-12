@@ -16,7 +16,7 @@ School.create!(schools_data)
 
 puts "Schools seeded successfully."
 
-# Seed sections from CSV..
+# Seed sections from CSV...
 sections_data = load_csv_data(Rails.root.join('db', 'seeds', 'sections.csv'))
 Section.create!(sections_data)
 
