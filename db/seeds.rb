@@ -10,13 +10,13 @@ def load_csv_data(file_path)
   data
 end
       
-# Seed schools from CSV.....
+# Seed schools from CSV......
 schools_data = load_csv_data(Rails.root.join('db', 'seeds', 'schools.csv'))
 School.create!(schools_data)
 
 puts "Schools seeded successfully."
 
-# Seed sections from CSV.
+# Seed sections from CSV..
 sections_data = load_csv_data(Rails.root.join('db', 'seeds', 'sections.csv'))
 Section.create!(sections_data)
 
