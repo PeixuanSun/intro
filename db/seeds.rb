@@ -22,7 +22,7 @@ Section.create!(sections_data)
 
 puts "Sections seeded successfully."
 
-# Seed students from CSV.....
+# Seed students from CSV......
 students_data = load_csv_data(Rails.root.join('db', 'seeds', 'students.csv'))
 Student.create!(students_data)
 
