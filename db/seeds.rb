@@ -1,7 +1,7 @@
 require 'csv'
 require 'faker'
 
-# Helper method to load CSV data
+# Helper method to load CSV data.
 def load_csv_data(file_path)
   data = []
   CSV.foreach(file_path, headers: true) do |row|
@@ -10,7 +10,7 @@ def load_csv_data(file_path)
   data
 end
       
-# Seed schools from CSV...
+# Seed schools from CSV....
 schools_data = load_csv_data(Rails.root.join('db', 'seeds', 'schools.csv'))
 School.create!(schools_data)
 
